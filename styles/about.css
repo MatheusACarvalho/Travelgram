@@ -1,0 +1,43 @@
+#about.container{
+  width: min(var(--max-width), 100% - var(--px-xl) * 2);
+}
+
+#about{
+  gap: 2rem;
+
+  & .about-content{
+    justify-content: start;
+
+    & .about-description{
+      width: 18.5rem;
+    }
+
+    & img{
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+  }
+
+  @media(width >= 80em) {
+    display: flex;
+    justify-content: space-between;
+    & .about-content{
+      width: 38rem;
+      display: flex;
+      gap: 2rem;
+  
+      & img{
+        width: 11rem;
+        height: 11rem;
+      }
+    }
+
+    & .points-content{
+      width: 17.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+}

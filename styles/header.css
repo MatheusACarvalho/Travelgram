@@ -1,55 +1,26 @@
 header {
-  background-color: var(--surface-color);
-}
 
-#container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 70px;
-}
+  & nav{
 
-#profile-content {
-  padding-block: 32px;
-}
+    & a.glass-img {
+      background-image: url(../assets/icons/MagnifyingGlass.svg);
+      background-size: cover;
+      background-position: center;
+      width: 1.5rem;
+      height: 1.5rem;
 
-#profile {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-#profile > div {
-  max-width: 384px;
-}
+        &:hover{
+          background-image: url(../assets/icons/MagnifyingGlass_hover.svg);
+        }
+      }      
+    } 
 
-#profile h1 {
-  font: var(--text-lg);
-  color: var(--text-color-primary);
-  margin-bottom: 8px;
-}
+  & nav > img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-#profile p {
-  font: var(--text-md);
-}
-
-#profile img {
-  width: 176px;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-#info {
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-
-   width: 280px;
-}
-
-#info li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  & div.container {
+    justify-content: space-between;
+  }
 }

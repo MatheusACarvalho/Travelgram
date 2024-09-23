@@ -1,0 +1,74 @@
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+.px-xl {
+  padding-inline: var(--px-xl);
+}
+
+.container {
+  --max-width:375px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+}
+
+.even-columns{
+  display: grid;
+  gap: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-0\.5{
+  gap: .5rem;
+}
+
+.gap-1{
+  gap: 1rem;
+}
+
+.gap-1\.25 {
+  gap: 1.25rem;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only{
+    display: initial;
+  }
+  
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }  
+  
+}
